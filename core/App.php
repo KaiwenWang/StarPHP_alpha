@@ -25,7 +25,7 @@ class App{
 		if(in_array($item,array_keys($conf_arr))){
 			return $conf_arr[$item];
 		}else{
-			throw new Exception($item."未配置");
+			throw new Exception($item."未配置!");
 		}
 	}
 
@@ -129,6 +129,7 @@ class App{
 	public function run(){
 		self::begin();
 		self::getConMtd();
+		echo 111;
 	}
 
 	private function createDir($foldarr,$FOLD){
